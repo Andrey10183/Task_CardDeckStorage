@@ -32,5 +32,10 @@ Console.WriteLine();
 cardDeckStorage.Shuffle("Deck1");
 Console.WriteLine($"Shuffle of deck1 completed");
 Console.WriteLine(cardDeckStorage.GetByName("Deck1").Value);
+
+cardDeckStorage.Shuffle("Deck1");
+Console.WriteLine($"Shuffle of deck1 completed");
+Console.WriteLine(cardDeckStorage.GetByName("Deck1").Value);
+
 Console.WriteLine(cardDeckStorage.GetByName("Deck2").Value);
 

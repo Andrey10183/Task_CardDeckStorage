@@ -48,6 +48,11 @@ public class CardDeckRepository : ICardDeckRepository
 
     public Result<CardDeck> GetByName(string name)
     {
+        if (string.IsNullOrEmpty(name))
+        {
+            return CardDeckErrors.InvalidInputParameter;
+        }
+
         var deck = DecksStorage
             .GetAll()
             .Where(x => x.Name == name)

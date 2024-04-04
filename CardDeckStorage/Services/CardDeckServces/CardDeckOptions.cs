@@ -28,6 +28,6 @@ public class CardDeckOptions
 
     public IShuffle GetShuffle()
     {
-        return _shuffleProvider.GetShuffleInstance(_shuffleName);
+        return _shuffleProvider.GetShuffleInstance(_shuffleName)!;
     }
 }

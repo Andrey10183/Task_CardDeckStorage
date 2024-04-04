@@ -14,4 +14,8 @@ public class CardDeckErrors
     public static readonly Error NameAlreadyExis = new(
         "CardDeck.NameAlreadyExis",
         "Try to create entry that already exist");
+
+    public static readonly Error InvalidInputParameter = new(
+        "CardDeck.InvalidInputParameter",
+        "Input parameter can't be null or empty");
 }

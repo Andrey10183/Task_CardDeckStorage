@@ -1,4 +1,5 @@
-﻿using CardDeckStorage.Interfaces;
+﻿using CardDeckStorage.Errors;
+using CardDeckStorage.Interfaces;
 using CardDeckStorage.Models;
 using CardDeckStorage.Shared;
 
@@ -20,9 +21,9 @@ public class CardDeckService : ICardDeckService
         _options = options;
     }
 
-    public Result Create(string cardDeckName)
+    public Result Create(string name)
     {
-        return _cardDeckRepository.Create(cardDeckName);
+        return _cardDeckRepository.Create(name);
     }
 
     public Result DeleteByName(string name)
